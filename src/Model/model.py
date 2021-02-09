@@ -186,7 +186,7 @@ def cnn_model(channels, nb_epoch, batch_size, nb_classes, nb_gpus,
 
   model.summary()
 
-  model = multi_gpu_model(model, gpus=2)
+#   model = multi_gpu_model(model, gpus=2)
   
   #model.load_weights("C:\\Tirth\\Diabetic Retinopathy\\Model\\Train_again_on_saved model\\saved_model\\saved_epoch_10.h5")
   

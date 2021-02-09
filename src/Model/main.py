@@ -1,4 +1,5 @@
-import PARTH_model as modl
+# import PARTH_model as modl
+import model as modl
 
 import os
 import numpy as np
@@ -13,7 +14,8 @@ from sklearn.utils import class_weight
 
 # Reproduce Result
 np.random.seed(1337)
-tf.set_random_seed(1337)
+# tf.set_random_seed(1337)
+tf.random.set_seed(1337)
 
 def save_model(model, epoch, score, model_name):
     if score >= 0.75:
